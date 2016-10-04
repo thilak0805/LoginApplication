@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="0" time="0.5" errors="1" skipped="0" tests="1" name="com.loginapp.controller.LoginControllerTest">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_79\jre\bin"/>
+    <property name="java.vm.version" value="24.79-b02"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Dayalan\Documents\workspace-sts-3.7.2.RELEASE\LoginApplication"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\Dayalan\Documents\workspace-sts-3.7.2.RELEASE\LoginApplication"/>
+    <property name="java.runtime.version" value="1.7.0_79-b15"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.7.0_79\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\Dayalan\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 8.1"/>
+    <property name="classworlds.conf" value="C:\Users\Dayalan\Documents\workspace-sts-3.7.2.RELEASE\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf5523216487264790985.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_79\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Java\jdk1.7.0_79\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Universal Extractor;C:\Program Files (x86)\Universal Extractor\bin;,;C:\Adobe\Reader 10.0\Reader;E:\jboss-profiler-1.0.CR4\jboss-profiler-1.0.CR4\jvmpi\windows\;C:\Program Files (x86)\Adobe\Reader 10.0\Reader\AcroRd32.exe;C:\Program Files\Internet Explorer\iexplore.exe;C:\Program Files (x86)\Google\Chrome\Application\chrome.exe;C:\Program Files (x86)\Mozilla Firefox\firefox.exe;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Skype\Phone\;C:\Java\jdk1.6.0_27\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Universal Extractor;C:\Program Files (x86)\Universal Extractor\bin;,;C:\Adobe\Reader 10.0\Reader;E:\jboss-profiler-1.0.CR4\jboss-profiler-1.0.CR4\jvmpi\windows\;C:\Program Files (x86)\Adobe\Reader 10.0\Reader\AcroRd32.exe;C:\Program Files\Internet Explorer\iexplore.exe;C:\Program Files (x86)\Google\Chrome\Application\chrome.exe;C:\Program Files (x86)\Mozilla Firefox\firefox.exe;C:\Users\Dayalan\AppData\Local\Programs\Git\cmd;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.3"/>
+    <property name="user.home" value="C:\Users\Dayalan"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="Dayalan"/>
+    <property name="java.class.path" value="/C:/SSSU/spring-tool-suite-3.7.2.RELEASE-e4.5.1-win32-x86_64/sts-bundle/sts-3.7.2.RELEASE/plugins/org.eclipse.m2e.maven.runtime_1.6.2.20150902-0001/jars/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.7.0_79\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.7.0_79"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.7.0_79\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.7.0_79\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_79\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_79\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_79\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_79\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_79\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_79\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_79\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Users\Dayalan\Documents\workspace-sts-3.7.2.RELEASE\LoginApplication\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase time="0.5" classname="com.loginapp.controller.LoginControllerTest" name="testshowForm">
+    <error message="Circular view path [loginform]: would dispatch back to the current handler URL [/loginform] again. Check your ViewResolver setup! (Hint: This may be the result of an unspecified view, due to default view name generation.)" type="javax.servlet.ServletException">javax.servlet.ServletException: Circular view path [loginform]: would dispatch back to the current handler URL [/loginform] again. Check your ViewResolver setup! (Hint: This may be the result of an unspecified view, due to default view name generation.)
+	at org.springframework.web.servlet.view.InternalResourceView.prepareForRendering(InternalResourceView.java:263)
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:186)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:267)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1217)
+	at org.springframework.test.web.servlet.TestDispatcherServlet.render(TestDispatcherServlet.java:102)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1005)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:952)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:870)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:852)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837)
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:62)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:170)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:137)
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:141)
+	at com.loginapp.controller.LoginControllerTest.testshowForm(LoginControllerTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-out>2016-10-04 18:37:16 DEBUG SpringJUnit4ClassRunner:107 - SpringJUnit4ClassRunner constructor called with [class com.loginapp.controller.LoginControllerTest].
+2016-10-04 18:37:16 DEBUG AbstractDelegatingSmartContextLoader:89 - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@3366184d declaringClass = &apos;com.loginapp.controller.LoginControllerTest&apos;, locations = &apos;{classpath*:dispatcher-servlet-test.xml}&apos;, classes = &apos;{}&apos;, inheritLocations = true, initializers = &apos;{}&apos;, inheritInitializers = true, name = [null], contextLoaderClass = &apos;org.springframework.test.context.ContextLoader&apos;].
+2016-10-04 18:37:16 DEBUG ContextLoaderUtils:502 - Could not find an &apos;annotation declaring class&apos; for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.loginapp.controller.LoginControllerTest]
+2016-10-04 18:37:16 DEBUG TestContextManager:187 - @TestExecutionListeners is not present for class [class com.loginapp.controller.LoginControllerTest]: using defaults.
+2016-10-04 18:37:16 DEBUG ProfileValueUtils:70 - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.loginapp.controller.LoginControllerTest]
+2016-10-04 18:37:16 DEBUG ProfileValueUtils:82 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.loginapp.controller.LoginControllerTest]
+2016-10-04 18:37:16 DEBUG ProfileValueUtils:70 - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.loginapp.controller.LoginControllerTest]
+2016-10-04 18:37:16 DEBUG ProfileValueUtils:82 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.loginapp.controller.LoginControllerTest]
+2016-10-04 18:37:16 DEBUG ProfileValueUtils:70 - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.loginapp.controller.LoginControllerTest]
+2016-10-04 18:37:16 DEBUG ProfileValueUtils:82 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.loginapp.controller.LoginControllerTest]
+2016-10-04 18:37:16 DEBUG DependencyInjectionTestExecutionListener:73 - Performing dependency injection for test context [[DefaultTestContext@726343c4 testClass = LoginControllerTest, testInstance = com.loginapp.controller.LoginControllerTest@52f63387, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@21b10e9e testClass = LoginControllerTest, locations = &apos;{classpath*:dispatcher-servlet-test.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]]].
+2016-10-04 18:37:16 DEBUG AbstractDelegatingSmartContextLoader:98 - Delegating to GenericXmlContextLoader to load context from [MergedContextConfiguration@21b10e9e testClass = LoginControllerTest, locations = &apos;{classpath*:dispatcher-servlet-test.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]].
+2016-10-04 18:37:16 DEBUG AbstractGenericContextLoader:105 - Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@21b10e9e testClass = LoginControllerTest, locations = &apos;{classpath*:dispatcher-servlet-test.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]].
+2016-10-04 18:37:16 DEBUG StandardEnvironment:110 - Adding [systemProperties] PropertySource with lowest search precedence
+2016-10-04 18:37:16 DEBUG StandardEnvironment:110 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-10-04 18:37:16 DEBUG StandardEnvironment:126 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2016-10-04 18:37:16 DEBUG XmlBeanDefinitionReader:223 - Loaded 0 bean definitions from location pattern [classpath*:dispatcher-servlet-test.xml]
+2016-10-04 18:37:16 INFO  GenericApplicationContext:513 - Refreshing org.springframework.context.support.GenericApplicationContext@15ea9246: startup date [Tue Oct 04 18:37:16 IST 2016]; root of context hierarchy
+2016-10-04 18:37:16 DEBUG GenericApplicationContext:543 - Bean factory for org.springframework.context.support.GenericApplicationContext@15ea9246: org.springframework.beans.factory.support.DefaultListableBeanFactory@7281205b: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor]; root of factory hierarchy
+2016-10-04 18:37:16 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean &apos;org.springframework.context.annotation.internalConfigurationAnnotationProcessor&apos;
+2016-10-04 18:37:16 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean &apos;org.springframework.context.annotation.internalConfigurationAnnotationProcessor&apos;
+2016-10-04 18:37:16 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean &apos;org.springframework.context.annotation.internalConfigurationAnnotationProcessor&apos; to allow for resolving potential circular references
+2016-10-04 18:37:16 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean &apos;org.springframework.context.annotation.internalConfigurationAnnotationProcessor&apos;
+2016-10-04 18:37:16 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean &apos;org.springframework.context.annotation.internalAutowiredAnnotationProcessor&apos;
+2016-10-04 18:37:16 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean &apos;org.springframework.context.annotation.internalAutowiredAnnotationProcessor&apos;
+2016-10-04 18:37:16 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean &apos;org.springframework.context.annotation.internalAutowiredAnnotationProcessor&apos; to allow for resolving potential circular references
+2016-10-04 18:37:16 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean &apos;org.springframework.context.annotation.internalAutowiredAnnotationProcessor&apos;
+2016-10-04 18:37:16 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean &apos;org.springframework.context.annotation.internalRequiredAnnotationProcessor&apos;
+2016-10-04 18:37:16 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean &apos;org.springframework.context.annotation.internalRequiredAnnotationProcessor&apos;
+2016-10-04 18:37:16 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean &apos;org.springframework.context.annotation.internalRequiredAnnotationProcessor&apos; to allow for resolving potential circular references
+2016-10-04 18:37:16 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean &apos;org.springframework.context.annotation.internalRequiredAnnotationProcessor&apos;
+2016-10-04 18:37:16 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean &apos;org.springframework.context.annotation.internalCommonAnnotationProcessor&apos;
+2016-10-04 18:37:16 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean &apos;org.springframework.context.annotation.internalCommonAnnotationProcessor&apos;
+2016-10-04 18:37:16 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean &apos;org.springframework.context.annotation.internalCommonAnnotationProcessor&apos; to allow for resolving potential circular references
+2016-10-04 18:37:16 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean &apos;org.springframework.context.annotation.internalCommonAnnotationProcessor&apos;
+2016-10-04 18:37:16 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean &apos;org.springframework.context.annotation.internalPersistenceAnnotationProcessor&apos;
+2016-10-04 18:37:16 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean &apos;org.springframework.context.annotation.internalPersistenceAnnotationProcessor&apos;
+2016-10-04 18:37:16 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean &apos;org.springframework.context.annotation.internalPersistenceAnnotationProcessor&apos; to allow for resolving potential circular references
+2016-10-04 18:37:16 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean &apos;org.springframework.context.annotation.internalPersistenceAnnotationProcessor&apos;
+2016-10-04 18:37:16 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean &apos;org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor&apos;
+2016-10-04 18:37:16 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean &apos;org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor&apos;
+2016-10-04 18:37:16 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean &apos;org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor&apos; to allow for resolving potential circular references
+2016-10-04 18:37:16 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean &apos;org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor&apos;
+2016-10-04 18:37:16 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean &apos;org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor&apos;
+2016-10-04 18:37:16 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean &apos;org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor&apos;
+2016-10-04 18:37:16 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean &apos;org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor&apos; to allow for resolving potential circular references
+2016-10-04 18:37:16 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean &apos;org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor&apos;
+2016-10-04 18:37:16 DEBUG GenericApplicationContext:649 - Unable to locate MessageSource with name &apos;messageSource&apos;: using default [org.springframework.context.support.DelegatingMessageSource@10e73e0]
+2016-10-04 18:37:16 DEBUG GenericApplicationContext:673 - Unable to locate ApplicationEventMulticaster with name &apos;applicationEventMulticaster&apos;: using default [org.springframework.context.event.SimpleApplicationEventMulticaster@55cbf3f8]
+2016-10-04 18:37:16 DEBUG DefaultListableBeanFactory:672 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7281205b: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor]; root of factory hierarchy
+2016-10-04 18:37:16 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean &apos;org.springframework.context.annotation.internalConfigurationAnnotationProcessor&apos;
+2016-10-04 18:37:16 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean &apos;org.springframework.context.annotation.internalAutowiredAnnotationProcessor&apos;
+2016-10-04 18:37:16 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean &apos;org.springframework.context.annotation.internalRequiredAnnotationProcessor&apos;
+2016-10-04 18:37:16 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean &apos;org.springframework.context.annotation.internalCommonAnnotationProcessor&apos;
+2016-10-04 18:37:16 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean &apos;org.springframework.context.annotation.internalPersistenceAnnotationProcessor&apos;
+2016-10-04 18:37:16 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean &apos;org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor&apos;
+2016-10-04 18:37:16 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean &apos;org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor&apos;
+2016-10-04 18:37:16 DEBUG GenericApplicationContext:700 - Unable to locate LifecycleProcessor with name &apos;lifecycleProcessor&apos;: using default [org.springframework.context.support.DefaultLifecycleProcessor@755facb0]
+2016-10-04 18:37:16 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean &apos;lifecycleProcessor&apos;
+2016-10-04 18:37:16 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;spring.liveBeansView.mbeanDomain&apos; in [systemProperties]
+2016-10-04 18:37:16 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;spring.liveBeansView.mbeanDomain&apos; in [systemEnvironment]
+2016-10-04 18:37:16 DEBUG PropertySourcesPropertyResolver:103 - Could not find key &apos;spring.liveBeansView.mbeanDomain&apos; in any property source. Returning [null]
+2016-10-04 18:37:16 DEBUG CacheAwareContextLoaderDelegate:93 - Storing ApplicationContext in cache under key [[MergedContextConfiguration@21b10e9e testClass = LoginControllerTest, locations = &apos;{classpath*:dispatcher-servlet-test.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]].
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;setup
+2016-10-04 18:37:16 DEBUG StandardEnvironment:110 - Adding [systemProperties] PropertySource with lowest search precedence
+2016-10-04 18:37:16 DEBUG StandardEnvironment:110 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-10-04 18:37:16 DEBUG StandardEnvironment:126 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2016-10-04 18:37:16 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped &quot;{[/loginform],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}&quot; onto public java.lang.String com.loginapp.controller.LoginController.showForm(java.util.Map)
+2016-10-04 18:37:16 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped &quot;{[/loginform],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}&quot; onto public java.lang.String com.loginapp.controller.LoginController.processForm(com.loginapp.form.LoginForm,org.springframework.validation.BindingResult,java.util.Map)
+2016-10-04 18:37:16 INFO  Version:56 - Hibernate Validator 4.0.2.GA
+2016-10-04 18:37:16 DEBUG ResourceBundleMessageInterpolator:193 - ValidationMessages not found. Delegating to org.hibernate.validator.ValidationMessages
+2016-10-04 18:37:16 DEBUG DefaultTraversableResolver:68 - Found javax.persistence.PersistenceUtil on classpath.
+2016-10-04 18:37:16 INFO  DefaultTraversableResolver:89 - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2016-10-04 18:37:16 DEBUG ValidationXmlParser:218 - No META-INF/validation.xml found. Using annotation based configuration only
+2016-10-04 18:37:16 DEBUG RequestMappingHandlerAdapter:621 - Looking for controller advice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@12d1d6ce
+2016-10-04 18:37:16 DEBUG TestDispatcherServlet:118 - Initializing servlet &apos;&apos;
+2016-10-04 18:37:16 DEBUG StandardServletEnvironment:110 - Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2016-10-04 18:37:16 DEBUG StandardServletEnvironment:110 - Adding [servletContextInitParams] PropertySource with lowest search precedence
+2016-10-04 18:37:16 DEBUG StandardServletEnvironment:110 - Adding [jndiProperties] PropertySource with lowest search precedence
+2016-10-04 18:37:16 DEBUG StandardServletEnvironment:110 - Adding [systemProperties] PropertySource with lowest search precedence
+2016-10-04 18:37:16 DEBUG StandardServletEnvironment:110 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-10-04 18:37:16 DEBUG StandardServletEnvironment:126 - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+2016-10-04 18:37:16 INFO  MockServletContext:430 - Initializing Spring FrameworkServlet &apos;&apos;
+2016-10-04 18:37:16 INFO  TestDispatcherServlet:479 - FrameworkServlet &apos;&apos;: initialization started
+2016-10-04 18:37:16 DEBUG TestDispatcherServlet:483 - Unable to locate MultipartResolver with name &apos;multipartResolver&apos;: no multipart request handling provided
+2016-10-04 18:37:16 DEBUG TestDispatcherServlet:498 - Using LocaleResolver [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@f449539]
+2016-10-04 18:37:16 DEBUG TestDispatcherServlet:520 - Using ThemeResolver [org.springframework.web.servlet.theme.FixedThemeResolver@5fa0d903]
+2016-10-04 18:37:16 DEBUG TestDispatcherServlet:658 - Using RequestToViewNameTranslator [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@39078501]
+2016-10-04 18:37:16 DEBUG TestDispatcherServlet:720 - Using FlashMapManager [org.springframework.web.servlet.support.SessionFlashMapManager@1cad21e7]
+2016-10-04 18:37:16 DEBUG TestDispatcherServlet:558 - Published WebApplicationContext of servlet &apos;&apos; as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.]
+2016-10-04 18:37:16 INFO  TestDispatcherServlet:498 - FrameworkServlet &apos;&apos;: initialization completed in 0 ms
+2016-10-04 18:37:16 DEBUG TestDispatcherServlet:139 - Servlet &apos;&apos; configured successfully
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;method
+2016-10-04 18:37:16 DEBUG TestDispatcherServlet:838 - DispatcherServlet with name &apos;&apos; processing GET request for [/loginform]
+2016-10-04 18:37:16 DEBUG StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:246 - Looking up handler method for path /loginform
+2016-10-04 18:37:16 DEBUG StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:251 - Returning handler method [public java.lang.String com.loginapp.controller.LoginController.showForm(java.util.Map)]
+2016-10-04 18:37:16 DEBUG TestDispatcherServlet:925 - Last-Modified value for [/loginform] is: -1
+2016-10-04 18:37:16 DEBUG TestDispatcherServlet:1214 - Rendering view [org.springframework.web.servlet.view.JstlView: unnamed; URL [loginform]] in DispatcherServlet with name &apos;&apos;
+2016-10-04 18:37:16 DEBUG JstlView:377 - Added model object &apos;loginForm&apos; of type [com.loginapp.form.LoginForm] to request in view with name &apos;null&apos;
+2016-10-04 18:37:16 DEBUG JstlView:377 - Added model object &apos;org.springframework.validation.BindingResult.loginForm&apos; of type [org.springframework.validation.BeanPropertyBindingResult] to request in view with name &apos;null&apos;
+2016-10-04 18:37:16 DEBUG TestDispatcherServlet:1221 - Error rendering view [org.springframework.web.servlet.view.JstlView: unnamed; URL [loginform]] in DispatcherServlet with name &apos;&apos;
+javax.servlet.ServletException: Circular view path [loginform]: would dispatch back to the current handler URL [/loginform] again. Check your ViewResolver setup! (Hint: This may be the result of an unspecified view, due to default view name generation.)
+	at org.springframework.web.servlet.view.InternalResourceView.prepareForRendering(InternalResourceView.java:263)
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:186)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:267)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1217)
+	at org.springframework.test.web.servlet.TestDispatcherServlet.render(TestDispatcherServlet.java:102)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1005)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:952)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:870)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:852)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837)
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:62)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:170)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:137)
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:141)
+	at com.loginapp.controller.LoginControllerTest.testshowForm(LoginControllerTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+2016-10-04 18:37:16 DEBUG TestDispatcherServlet:984 - Could not complete request
+javax.servlet.ServletException: Circular view path [loginform]: would dispatch back to the current handler URL [/loginform] again. Check your ViewResolver setup! (Hint: This may be the result of an unspecified view, due to default view name generation.)
+	at org.springframework.web.servlet.view.InternalResourceView.prepareForRendering(InternalResourceView.java:263)
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:186)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:267)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1217)
+	at org.springframework.test.web.servlet.TestDispatcherServlet.render(TestDispatcherServlet.java:102)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1005)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:952)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:870)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:852)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837)
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:62)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:170)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:137)
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:141)
+	at com.loginapp.controller.LoginControllerTest.testshowForm(LoginControllerTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+2016-10-04 18:37:16 DEBUG DirtiesContextTestExecutionListener:94 - After test method: context [DefaultTestContext@726343c4 testClass = LoginControllerTest, testInstance = com.loginapp.controller.LoginControllerTest@52f63387, testMethod = testshowForm@LoginControllerTest, testException = javax.servlet.ServletException: Circular view path [loginform]: would dispatch back to the current handler URL [/loginform] again. Check your ViewResolver setup! (Hint: This may be the result of an unspecified view, due to default view name generation.), mergedContextConfiguration = [MergedContextConfiguration@21b10e9e testClass = LoginControllerTest, locations = &apos;{classpath*:dispatcher-servlet-test.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]], class dirties context [false], class mode [null], method dirties context [false].
+</system-out>
+  </testcase>
+</testsuite>

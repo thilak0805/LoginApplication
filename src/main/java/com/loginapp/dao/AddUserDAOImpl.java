@@ -82,4 +82,10 @@ public class AddUserDAOImpl implements AddUserDAO{
 		return userList;
 	}
 
+	public UserDetails getPersonById(int id) {
+		Session session = sessionFactory.openSession();
+		UserDetails u = (UserDetails)session.load(UserDetails.class, new Integer(id));
+		return u;
+	}
+
 }

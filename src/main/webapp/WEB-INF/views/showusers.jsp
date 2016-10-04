@@ -18,6 +18,7 @@
 <td>Last Name</td>
 <td>Address</td>
 <td>Mobile</td>
+<td>Action</td>
 </tr>
 <c:forEach items="${listUsers}" var="showusers">
 <tr>
@@ -26,6 +27,9 @@
 <td>${showusers.userLastName}</td>
 <td>${showusers.userAddress}</td>
 <td>${showusers.userMobile}</td>
+<td>
+<c:url value="/showusers/${showusers.userId}/update" var="userUrl"/>
+<input type="submit" value="Edit" onclick="location.href='${userUrl}'" /></td>
 </tr>
 </c:forEach>
 </table>

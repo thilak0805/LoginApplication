@@ -49,6 +49,12 @@ public class AddUserServiceImpl implements AddUserService{
 		return adduserdao.getUsers();
 	}
 
+
+
+	public UserDetails getPersonById(int id) {
+		return adduserdao.getPersonById(id);
+	}
+
 	
 
 
