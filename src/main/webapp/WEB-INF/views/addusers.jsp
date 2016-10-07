@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
     <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+    
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -42,6 +43,31 @@
 			<td><input type="submit" value="Submit" /></td>
 		</tr>
 	</table>
+	
+<h3> Persons List </h3>
+
+<c:if test="${!empty listPersons}">
+
+<table>
+<tr>
+<td>User IDD</td>
+<td>First NameE</td>
+<td>Last Name</td>
+<td>Address</td>
+<td>Mobile</td>
+<td>Action</td>
+</tr>
+<c:forEach items="${listPersons}" var="addusers">
+<tr>
+<td>${addusers.userId}</td>
+<td>${addusers.userFirstName}</td>
+<td>${addusers.userLastName}</td>
+<td>${addusers.userAddress}</td>
+<td>${addusers.userMobile}</td>
+</tr>
+</c:forEach>
+</table>
+</c:if>
 </form:form>
 </body>
 </html>

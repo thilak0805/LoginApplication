@@ -55,6 +55,13 @@ public class AddUserServiceImpl implements AddUserService{
 		return adduserdao.getPersonById(id);
 	}
 
+
+
+	public boolean updateUsersById(Integer userId,String userFirstName,String userLastName,String userAddress,String userMobile) {
+		System.out.println("inside serviceimpl....");
+		return adduserdao.updateUsersById(userId,userFirstName,userLastName,userAddress,userMobile);
+	}
+
 	
 
 

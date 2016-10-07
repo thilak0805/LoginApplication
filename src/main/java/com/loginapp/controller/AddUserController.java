@@ -13,6 +13,8 @@ import com.loginapp.service.AddUserService;
 import com.loginapp.service.AddUserServiceImpl;
 
 import org.springframework.validation.BindingResult;
+
+import javax.swing.plaf.synth.SynthSeparatorUI;
 import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -20,7 +22,8 @@ import org.springframework.ui.Model;
 
 @Controller
 public class AddUserController {
-	private static final Logger logger = Logger.getLogger(AddUserController.class);
+	// private static final Logger logger =
+	// Logger.getLogger(AddUserController.class);
 	@Autowired
 	private AddUserService adduserservice;
 
@@ -45,16 +48,17 @@ public class AddUserController {
 	@RequestMapping(value = "/addusers", method = RequestMethod.POST)
 	public String processUserForm(@Valid UserForm userForm, BindingResult result, Map model) {
 		System.out.println("2222222");
-		if (result.hasErrors()) {
+		boolean userInserted = false;
+		/*if (result.hasErrors()) {
 			System.out.println("333333");
 			return "addusers";
-		}
-		boolean userInserted = adduserservice.checkAddUsers(userForm.getUserId(), userForm.getUserFirstName(),
+		}*/
+		userInserted = adduserservice.checkAddUsers(userForm.getUserId(), userForm.getUserFirstName(),
 				userForm.getUserLastName(), userForm.getUserAddress(), userForm.getUserMobile());
+
 		System.out.println("22222" + userInserted);
 		if (userInserted) {
-			// model.put("userForm", userForm);
-			return "addusersuccess";
+			return "showusers";
 		} else {
 			result.rejectValue("userdet", "User Not Added");
 			return "addusers";
@@ -62,13 +66,25 @@ public class AddUserController {
 
 	}
 
-	// Update user
-/*
-	@RequestMapping(value = "/showusers/{id}/update", method = RequestMethod.GET)
-	public String updateUserForm(@PathVariable("id") int id, Model model) {
-		model.addAttribute("person",adduserservice.getPersonById(id));
-		model.addAttribute("listpersons",adduser);
-		return "person";
+	@RequestMapping(value = "/addusers/{id}/update", method = RequestMethod.GET)
+	public String editPerson(@PathVariable("id") int id, Model model) {
+		System.out.println("inside edit person method.....");
+		model.addAttribute("addusers", adduserservice.getPersonById(id));
+		model.addAttribute("listPersons", adduserservice.getUsers());
+		return "addusers";
 	}
-*/
+
+	@RequestMapping(value = "/addusers/{id}/addusers.html", method = RequestMethod.POST)
+	public String editPersonValue(@PathVariable("id") int id, Model model, @Valid UserForm userForm) {
+		System.out.println("inside controller....editPersonValue....");
+		boolean userUpdated = false;
+		userUpdated = adduserservice.updateUsersById(id, userForm.getUserFirstName(), userForm.getUserLastName(),
+				userForm.getUserAddress(), userForm.getUserMobile());
+		if (userUpdated) {
+			return "showusers";
+		} else {
+			return "redirect:addusers";
+		}
+		 
+	}
 }

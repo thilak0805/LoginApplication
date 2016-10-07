@@ -4,6 +4,7 @@ import com.loginapp.dao.AddUserDAO;
 import com.loginapp.form.UserForm;
 import com.loginapp.model.UserDetails;
 
+import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.stereotype.Repository;
 import javax.annotation.Resource;
 import org.hibernate.SessionFactory;
@@ -16,6 +17,8 @@ public class AddUserDAOImpl implements AddUserDAO{
 	
 	@Resource(name="sessionFactory")
 	protected SessionFactory sessionFactory;
+	
+	private NamedParameterJdbcTemplate namedParameterJdbcTemplate;
 	
 	public SessionFactory getSessionFactory() {
 		return sessionFactory;
@@ -86,6 +89,45 @@ public class AddUserDAOImpl implements AddUserDAO{
 		Session session = sessionFactory.openSession();
 		UserDetails u = (UserDetails)session.load(UserDetails.class, new Integer(id));
 		return u;
+	}
+
+	public boolean updateUsersById(Integer userId,String userFirstName,String userLastName,String userAddress,String userMobile) {
+		Session session = sessionFactory.openSession();
+		boolean recstatus=false;
+		session.beginTransaction();
+		try{
+			System.out.println("inside daoimpl...");
+			System.out.println("id>"+userId);
+			System.out.println("userFirstName>"+userFirstName);
+			System.out.println("userLastName>"+userLastName);
+			System.out.println("userAddress>"+userAddress);
+			System.out.println("userMobile>"+userMobile);
+			UserDetails userform = new UserDetails();
+			/*String hql = "update UserDetails set userFirstName=:userFirstName,"
+					+ "userLastName=:userLastName,userAddress=:userAddress,"
+					+ "userMobile=:userMobile where userId=:userId";
+			Query query = session.createQuery(hql);
+			query.setParameter("userFirstName", userform.getUserFirstName());
+			query.setParameter("userLastName", userform.getUserLastName());
+			query.setParameter("userAddress", userform.getUserAddress());
+			query.setParameter("userMobile", userform.getUserMobile());
+			query.setParameter("userId", userId);*/
+			
+			userform = (UserDetails)session.get(UserDetails.class, userId);
+			userform.setUserFirstName(userFirstName);
+			userform.setUserLastName(userLastName);
+			userform.setUserAddress(userAddress);
+			userform.setUserMobile(userMobile);
+			
+			session.update(userform);
+			session.getTransaction().commit();
+			session.close();
+			recstatus = true;
+		}catch(Exception e){
+			e.printStackTrace();
+			recstatus=false;
+		}
+		return recstatus;
 	}
 
 }

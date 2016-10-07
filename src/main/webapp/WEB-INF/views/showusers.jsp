@@ -28,7 +28,7 @@
 <td>${showusers.userAddress}</td>
 <td>${showusers.userMobile}</td>
 <td>
-<c:url value="/showusers/${showusers.userId}/update" var="userUrl"/>
+<c:url value="addusers/${showusers.userId}/update" var="userUrl"/>
 <input type="submit" value="Edit" onclick="location.href='${userUrl}'" /></td>
 </tr>
 </c:forEach>
